@@ -15,9 +15,10 @@ namespace dropdown
             InitializeComponent();
             var countries = GetCountry();
             pickerC.ItemsSource = countries;
+           
           
         }
-        private List<string>GetCountry()
+        public List<string>GetCountry()
         {
             return new List<string>
             {
@@ -27,6 +28,19 @@ namespace dropdown
                 "Russian"
                 
             };
+        }
+     
+
+        private void Show_Pressed(object sender, EventArgs e)
+        {
+
+            var i = pickerC.SelectedIndex;
+            var countries = GetCountry();
+            var item = countries[i];
+
+
+            Console.WriteLine( item);
+            
         }
     }
 }

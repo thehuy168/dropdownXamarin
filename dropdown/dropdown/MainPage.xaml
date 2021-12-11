@@ -11,6 +11,10 @@
             </Picker.Items>
 
         </Picker>
+        <Button x:Name="Show" 
+                Pressed="Show_Pressed">
+            
+        </Button>
     </StackLayout>
 
 </ContentPage>
